@@ -2,28 +2,81 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Añadir</title>
+        <title>Modulo ABM</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <script src="https://kit.fontawesome.com/2da8e91210.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/stylesr.css">
+        <link rel="stylesheet" href="css/anadirstyles.css">
     </head>
 <body>
     <body>
-        <header>
-            <div>Fecha y Hora</div>
-            <div>Logo</div>
-            <div>Menu Hamburguesa</div>
+        <header>   
+            <div class="fechahora">
+                <div id="fechad">
+                <script>
+                    var d=new Date();
+                    var dia=new Array(7);
+                    dia[0]="Domingo";
+                    dia[1]="Lunes";
+                    dia[2]="Martes";
+                    dia[3]="Miercoles";
+                    dia[4]="Jueves";
+                    dia[5]="Viernes";
+                    dia[6]="Sabado";
+                    document.write(dia[d.getDay()]);
+                </script>
+                </div>
+                <div id="fecha">
+                    <script>
+                        //<![CDATA[
+                        function makeArray() {
+                        for (i = 0; i<makeArray.arguments.length; i++)
+                        this[i + 1] = makeArray.arguments[i];}
+                        var months = new makeArray('Enero','Febrero','Marzo','Abril','Mayo',
+                        'Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
+                        var date = new Date();
+                        var day = date.getDate();
+                        var month = date.getMonth() + 1;
+                        var yy = date.getYear();
+                        var year = (yy < 1000) ? yy + 1900 : yy;
+                        document.write(day + "  " + months[month] + "  " + year);
+                        //]]>
+                        </script>   
+                    </div>
+    
+                <div id="reloj">
+                <script>
+                    function startTime(){
+                    today=new Date();
+                    h=today.getHours();
+                    m=today.getMinutes();
+                    s=today.getSeconds();
+                    m=checkTime(m);
+                    s=checkTime(s);
+                    document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+                    t=setTimeout('startTime()',500);}
+                    function checkTime(i)
+                    {if (i<10) {i="0" + i;}return i;}
+                    window.onload=function(){startTime();}
+                    </script>
+                    </div>
+            </div>
+    
+            <div class="logoyhamburguesa">
+                <div class="logo"><a href="/"><img src="images/moduloABM2.png" alt="Logo ABM" class="imgABM"></a></div>
+                <div class="burger-menu"><i class="fa fa-bars burger-10x"></i></div>
+            </div>
         </header>
         <main class="register">
             <form action="/" method="POST">
-            <div>
-                <h2>Añadir Vacuno</h2>
+            <div class="titulo">
+                <h2>AÑADIR VACUNO</h2>
             </div>
 
+            <div class="formanadir">
             <div class="nombre">
-                <input class="nombreinput" type="text" name="name" placeholder="Nombre">
+                <input class="nombreinput" type="text" name="name" placeholder="Nombre del Vacuno">
                 <span><p href="pformu"></p></span>
             </div>
 
@@ -34,23 +87,27 @@
             </div>
 
             <div class="dueño">
-                <input class="dueño" type="text" name="addres" placeholder="Dueño">
+                <input class="dueñoinput" type="text" name="addres" placeholder="Dueño">
                 <span><p class="pformu"></p></span>
             </div>
 
             <div class="hijade">
-                <input class="hijade" type="text" name="addres" placeholder="Hija de">
+                <input class="hijadeinput" type="text" name="addres" placeholder="Hija de">
                 <span><p class="pformu"></p></span>
             </div>
             
             <div class="comentario">
-                <p><textarea name="comentario" rows="5" cols="50">Escribe aquí tu comentario: </textarea></p>
+                <p><textarea name="comentarioinput" rows="5" cols="43" placeholder="Escribe aquí tu comentario:"></textarea></p>
+            </div>
+            <div class="confirmcancel">                
+                <input class="cc" type="submit" value="CONFIRMAR">                
             </div>
             </div>
         </form>
+    </div>
     </main>
-        <footer>
-            <div>Datos Meteorologico</div>
-        </footer>
+    <footer class="pie-foot">
+        <a class="adelfoot" href="https://weather.com/es-AR/tiempo/hoy/l/b281aa8878cb4c22c9ffe94da42fc84c9d560c70e18e749264289b2ff47c7c07">DATO <br> METEOROLOGICO</a>
+    </footer>
 </body>
 </html>

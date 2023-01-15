@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://www.xtrafondos.com/wallpapers/pasto-1455.jpg);
+    background-size:cover;
+}
+
+div#fechad{
+    color: #111111;
+    font-family: fantasy;
+    font-style: normal;
+    font-size: 22px
+}
+
+div#reloj{
+    color: #111111;
+    font-family: fantasy;
+    font-style: normal;
+    font-size: 22px;
+}
+div#fecha{
+    color: #111111;
+    font-family:fantasy;
+    font-style: normal;
+    font-size: 22px;
+}
+
+
+/*top-header*/
+div.fechahora{
+    background-color: white;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.logoyhamburguesa {
+    background-image: url(https://s1.1zoom.me/big0/848/429789-svetik.jpg);
+    background-size: 100%; 
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    justify-content: space-evenly;
+}
+
+img.imgABM{
+    width: 95%;
+}
+
+div.logo{
+    width: 80%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #03264C;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+i.fa fa-bars burger{
+    size: 20px;
+}
+
+/*head-main*/
+main.head-main{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration:none;
+    color: black;
+    font-family:fantasy;
+}
+div.seccionanadir{
+    box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
+    border: 5px solid darkblue;
+    border: groove;
+    height: 150px;
+    width: 165px;
+    background-color: #77dd77;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+img.imgagregar{
+    width: 50%;
+}
+div.seccionmodificar{
+    box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
+    border: 5px solid darkblue;
+    border: groove;
+    height: 150px;
+    width: 165px;
+    background-color: #77dd77;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+img.imgmodificar{
+    width: 85%;
+}
+div.seccionventa{
+    box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
+    border: 5px solid darkblue;
+    border: groove;
+    height: 150px;
+    width: 165px;
+    background-color: #77dd77;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    text-align: center;
+  
+}
+img.imgventa{
+    width: 70%;
+}
+div.seccioncompra{
+    box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
+    border: 5px solid darkblue;
+    border: groove;
+    height: 150px;
+    width: 165px;
+    background-color: #77dd77;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    text-align: center;
+ 
+}
+img.imgcompra{
+    width: 70%;
+}
+div.seccionregistrodelluvia{
+    box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
+    border: 5px solid darkblue;
+    border: groove;
+    height: 150px;
+    width: 165px;
+    background-color: #77dd77;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    text-align: center;
+   
+}
+img.imgregistrodelluvia{
+    width: 50%;
+}
+div.secciondeceso{
+    box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
+    border: 5px solid darkblue;
+    border: groove;
+    height: 150px;
+    width: 165px;
+    background-color: #77dd77;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+img.imgdeceso{
+    width: 70%;
+}
+
+
+/*pie-foot*/
+a.adelfoot{
+    color: black(196, 192, 192);
+}
+footer.pie-foot{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/77/Nuages.gif);
+    background-size: cover;
+    border: solid gray;
+    font-style: italic;
+    font-size: 40px;
+    width: 93%;
+    margin-left: 13px;
+    margin-top: 40px;
+    margin-bottom: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
