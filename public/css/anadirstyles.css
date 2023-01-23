@@ -8,10 +8,18 @@ a {
     color: black;
     font-family: fantasy;
 }
+p.pformu{
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: red;
+    font-family: unset;
+    text-shadow: 1px 2px 2px #000000;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(https://www.xtrafondos.com/wallpapers/pasto-1455.jpg);
+    background-image: url(../images/body.png);
     background-size:cover;
 }
 
@@ -64,6 +72,7 @@ img.imgABM{
     width: 95%;
 }
 
+
 div.logo{
     width: 80%;
 }
@@ -111,7 +120,21 @@ div.formanadir{
     align-items: center;
 }
 
+div.calsificacionv{
+    text-align: center;
+    margin-top: 11px;
+}
+
+select#clasificacionvacuna{
+    font-size: 25px;
+    font-family: fantasy;
+    text-align: center;
+    width: 322px;
+    align-items: center;
+}
+
 div.nombre{
+    text-align: center;
     margin-top: 11px;
 }
 input.nombreinput{
@@ -121,6 +144,7 @@ input.nombreinput{
     width: 322px;
 }
 div.nacimiento{
+    text-align: center;
     margin-top: 12px;
 }
 input.nacimientoinput{
@@ -140,7 +164,8 @@ input.dueñoinput{
     width: 322px;
 }
 div.hijade{
-    margin-top: 12px;
+    text-align: center;
+    margin-top: 13px;
 }
 input.hijadeinput{
     font-size: 25px;
@@ -148,11 +173,33 @@ input.hijadeinput{
     text-align: center;
     width: 322px;
 }
+div.fotodevacuno{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 24px;
+    font-family: fantasy;
+    text-align: center;
+    background-color: white;
+}
+div.fotodevacuno{
+    text-align: center;
+    margin-top: 13px;
+}
+input#userImage{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
 div.comentario{
+    text-align: center;
     margin-top: 13px;
 }
 textarea{
-    font-size: 25px;
+    font-size: 18px;
     font-family: fantasy;
     text-align: center;
     width: 322px;
@@ -175,6 +222,16 @@ input.cc:hover,cc:active{
     color:greenyellow;
 }
 
+label{
+    font-size: 18px;
+    font-family: unset;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: black;
+}
+
+/* ACA COMIENZA EL FOOTER*/
+
 footer.pie-foot{
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/77/Nuages.gif);
     background-size: cover;
@@ -183,7 +240,7 @@ footer.pie-foot{
     font-size: 40px;
     width: 93%;
     margin-left: 13px;
-    margin-top: 40px;
+    margin-top: 28px;
     margin-bottom: 28px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
