@@ -180,18 +180,18 @@ div.fotodevacuno{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 24px;
-    font-family: fantasy;
-    text-align: center;
-    background-color: white;
 }
+
 div.fotodevacuno{
     text-align: center;
     margin-top: 13px;
 }
-input#userImage{
+input#userImage {
     margin-bottom: 2%;
     margin-top: 2%;
+    width: 276px;
+    height: 21px;
+    background: yellow;
 }
 
 div.comentario{
@@ -228,6 +228,7 @@ label{
     font-weight: bold;
     font-variant: small-caps;
     color: black;
+    background-color: greenyellow;
 }
 
 /* ACA COMIENZA EL FOOTER*/
@@ -238,13 +239,79 @@ footer.pie-foot{
     border: solid gray;
     font-style: italic;
     font-size: 40px;
-    width: 93%;
-    margin-left: 13px;
-    margin-top: 28px;
-    margin-bottom: 28px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+}
+a.adelfoot{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*MEDIAQUERY*/
+@media (min-width: 361px){
+    div.calsificacionv {
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    div.nombre {
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    div.nacimiento {
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    div.dueño {
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    div.hijade {
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    div.fotodevacuno {
+        width: 322px;
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    footer.pie-foot {
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+@media (min-width: 1181px){
+    footer.pie-foot {
+        width: auto;
+    }
+}
 }
