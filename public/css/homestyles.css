@@ -46,7 +46,7 @@ div.fechahora{
 }
 
 div.logoyhamburguesa {
-    background-image: url(https://s1.1zoom.me/big0/848/429789-svetik.jpg);
+    background-image: url(../images/fondocampo.jpg);
     background-size: 100%; 
     padding: 2%;
     display: flex;
@@ -93,10 +93,21 @@ main.head-main{
 }
 
 a{
-    text-decoration:none;
+    text-decoration: none;
     color: black;
-    font-family:fantasy;
+    font-family: fantasy;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+a.aregistrodelluvia{
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+}
+
 div.seccionanadir{
     box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
     border: 5px solid darkblue;
@@ -105,15 +116,26 @@ div.seccionanadir{
     width: 165px;
     background-color: #77dd77;
     display: flex;
-    font-size: 25px;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 img.imgagregar{
-    width: 50%;
+    width: 70%;
+}
+div.seccioninforme{
+    box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
+    border: 5px solid darkblue;
+    border: groove;
+    height: 150px;
+    width: 165px;
+    background-color: #77dd77;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+img.imginforme{
+    width: 70%;
 }
 div.seccionmodificar{
     box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
@@ -123,15 +145,12 @@ div.seccionmodificar{
     width: 165px;
     background-color: #77dd77;
     display: flex;
-    font-size: 25px;
-    align-items: center;
     justify-content: space-around;
     margin-bottom: 10px;
-    text-align: center;
 
 }
 img.imgmodificar{
-    width: 85%;
+    width: 70%;
 }
 div.seccionventa{
     box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
@@ -141,12 +160,8 @@ div.seccionventa{
     width: 165px;
     background-color: #77dd77;
     display: flex;
-    font-size: 25px;
-    align-items: center;
     justify-content: space-around;
     margin-bottom: 10px;
-    text-align: center;
-  
 }
 img.imgventa{
     width: 70%;
@@ -159,36 +174,27 @@ div.seccioncompra{
     width: 165px;
     background-color: #77dd77;
     display: flex;
-    font-size: 25px;
-    align-items: center;
     justify-content: space-around;
     margin-bottom: 10px;
-    text-align: center;
- 
 }
 img.imgcompra{
     width: 70%;
 }
 div.seccionregistrodelluvia{
-    box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
+    box-shadow: 0px 9px 15px -4px rgb(0 0 0 / 71%);
     border: 5px solid darkblue;
     border: groove;
     height: 150px;
     width: 165px;
     background-color: #77dd77;
     display: flex;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-    flex-wrap: wrap;
     margin-bottom: 10px;
-    text-align: center;
-   
+    align-items: center;
+    justify-content: space-around;
 }
+
 img.imgregistrodelluvia{
-    width: 50%;
+    width: 80%;
 }
 div.secciondeceso{
     box-shadow: 0px 9px 15px -4px rgba(0,0,0,0.71);
@@ -198,11 +204,8 @@ div.secciondeceso{
     width: 165px;
     background-color: #77dd77;
     display: flex;
-    font-size: 25px;
-    align-items: center;
     justify-content: space-around;
     margin-bottom: 10px;
-    text-align: center;
     
 }
 img.imgdeceso{

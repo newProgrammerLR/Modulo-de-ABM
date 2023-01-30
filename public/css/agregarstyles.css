@@ -1,0 +1,341 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: fantasy;
+}
+p.pformu{
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: red;
+    font-family: unset;
+    text-shadow: 1px 2px 2px #000000;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/body.png);
+    background-size:cover;
+}
+
+div#fechad{
+    color: #111111;
+    font-family: fantasy;
+    font-style: normal;
+    font-size: 22px
+}
+
+div#reloj{
+    color: #111111;
+    font-family: fantasy;
+    font-style: normal;
+    font-size: 22px;
+}
+div#fecha{
+    color: #111111;
+    font-family:fantasy;
+    font-style: normal;
+    font-size: 22px;
+}
+
+
+/*top-header*/
+div.fechahora{
+    background-color: white;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.logoyhamburguesa {
+    background-image: url(../images/fondocampo.jpg);
+    background-size: 100%; 
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    justify-content: space-evenly;
+}
+
+img.imgABM{
+    width: 95%;
+}
+
+
+div.logo{
+    width: 80%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #03264C;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+i.fa fa-bars burger{
+    size: 20px;
+}
+
+/* ACA COMIENZA EL MAIN*/
+div.titulo{
+    display: flex;
+    width: 204px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-family: fantasy;
+    color: black;
+    background-color: #77dd77;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+div.titulo2{
+    display: flex;
+    width: 204px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-family: fantasy;
+    color: black;
+    background-color: #56e1cb;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+div.formanadir{
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+}
+
+div.calsificacionv{
+    text-align: center;
+    margin-top: 11px;
+}
+
+select#clasificacionvacuna{
+    font-size: 25px;
+    font-family: fantasy;
+    text-align: center;
+    width: 322px;
+    align-items: center;
+}
+
+div.nombre{
+    text-align: center;
+    margin-top: 11px;
+}
+input.nombreinput{
+    font-size: 25px;
+    font-family: fantasy;
+    text-align: center;
+    width: 322px;
+}
+div.nacimiento{
+    text-align: center;
+    margin-top: 12px;
+}
+input.nacimientoinput{
+    font-size: 25px;
+    font-family: fantasy;
+    text-align: center;
+    width: 322px;
+}
+div.dueño{
+    text-align: center;
+    margin-top: 11px;
+}
+input.dueñoinput{
+    font-size: 25px;
+    font-family: fantasy;
+    text-align: center;
+    width: 322px;
+}
+div.hijade{
+    text-align: center;
+    margin-top: 13px;
+}
+input.hijadeinput{
+    font-size: 25px;
+    font-family: fantasy;
+    text-align: center;
+    width: 322px;
+}
+div.fotodevacuno{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.fotodevacuno{
+    text-align: center;
+    margin-top: 13px;
+}
+input#userImage {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 276px;
+    height: 21px;
+    background: yellow;
+}
+
+div.comentario{
+    text-align: center;
+    margin-top: 13px;
+}
+textarea{
+    font-size: 18px;
+    text-align: left;
+    width: 322px;
+    line-height: 1.5;
+}
+div.confirmar{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+input.cc{
+    font: icon;
+    font-family: fantasy;
+    height: 75px;
+    width: 142px;
+    font-size: x-large;
+    color: black;
+    transition: color .10s;
+}
+
+input.cc:hover,cc:active{
+    color:greenyellow;
+}
+
+label{
+    width: auto;
+    font-size: 18px;
+    margin-bottom: 4px;
+    font-family: unset;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: black;
+    background-color: greenyellow;
+}
+
+/* ACA COMIENZA EL FOOTER*/
+
+footer.pie-foot{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/77/Nuages.gif);
+    background-size: cover;
+    border: solid gray;
+    font-style: italic;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+a.adelfoot{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*MEDIAQUERY*/
+@media(min-width: 360px){
+    div.calsificacionv {
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    div.nombre {
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    div.nacimiento {
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    div.dueño {
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    div.hijade {
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    div.fotodevacuno {
+        width: 322px;
+        text-align: center;
+        margin-top: 11px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    footer.pie-foot {
+        width: 94%;
+        margin-left: 12px;
+        margin-right: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: 769px){
+        footer.pie-foot {
+            width: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+}

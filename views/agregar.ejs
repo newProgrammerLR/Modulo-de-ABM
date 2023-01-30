@@ -2,24 +2,26 @@
 <html lang="en">
     <head>
         <%- include("./partials/head") %>
-        <link rel="stylesheet" href="css/anadirstyles.css">
-        <title>Modulo ABM</title>
+        <link rel="stylesheet" href="css/agregarstyles.css">
+        <title>AGREGAR</title>
     </head>
 <body>
     <header>   
         <%- include("./partials/header") %>
     </header>
-    
-    <main class="register">
-        <form action="/" method="POST">
-        <div class="titulo">
-            <h2>AÑADIR VACUNO</h2>
-        </div>
-        <div class="formanadir">
-        
+    <div class="titulo">
+        <h2>AÑADIR VACUNO</h2>  
+    </div>
+    <div class="titulo2">
+    <a href="informe">
+        <h2>INFORME</h2></a>
+    </div>
+    <div class="formanadir">
+    <main class="agregar_vacas">
+        <form class="agregar_vacas" action="/agregar" method="POST" enctype="multipart/form-data">        
             <div class="calsificacionv">
             <label for="categoria">CATEGORIA</label>
-            <select name="clasificacionvacuna" id="clasificacionvacuna">
+            <select name="clasificacionVacuna" id="clasificacionvacuna">
                 <option value="En Blanco"></option>
                 <option value="Ternera">Ternera</option>
                 <option value="Ternero">Ternero</option>
@@ -34,25 +36,25 @@
         
         <div class="nombre">
             <label for="nombre">NOMBRE</label>
-            <input class="nombreinput" type="text" name="Nombre del vacuno" placeholder="Nombre del Vacuno">
+            <input class="nombreinput" type="text" name="nombreDelVacuno" placeholder="Nombre del Vacuno">
             <span><p class="pformu">Debe tener más de 4 caracteres</p></span>
         </div>
 
         <div class="nacimiento">
             <label for="fechadenacimiento">FECHA DE NACIMIENTO<b class="b"></b></label>
-            <input class="nacimientoinput" type="date" name="Fecha de nacimiento" id="fechadenacimiento">
+            <input class="nacimientoinput" type="date" name="fechaDeNacimiento" id="fechadenacimiento">
             <span><p class="pformu"></p></span>
         </div>
 
         <div class="dueño">
             <label for="nombre">DUEÑO</label>
-            <input class="dueñoinput" type="text" name="Dueño" placeholder="Dueño">
+            <input class="dueñoinput" type="text" name="dueño" placeholder="Dueño">
             <span><p class="pformu">Debe Ingresar un Dueño</p></span>
         </div>
 
         <div class="hijade">
             <label for="nombre">HIJA DE</label>
-            <input class="hijadeinput" type="text" name="Hija de" placeholder="Hija de">
+            <input class="hijadeinput" type="text" name="hijaDe" placeholder="Hija de">
             <span><p class="pformu">Debe Ingresar la línea de Sangre</p></span>
         </div>
             
@@ -64,11 +66,11 @@
         
         <div class="comentario">
             <label for="nombre">COMENTARIO</label>
-            <p><textarea name="comentarioinput" rows="5" cols="43" placeholder="Escribe aquí tu comentario:"></textarea></p>
+            <p><textarea name="comentarioInput" rows="5" cols="43" placeholder="Escribe aquí tu comentario:"></textarea></p>
             <span><p class="pformu">Debe insertar las características del animal</p></span>
 
         </div>
-            <div class="confirmcancel">                
+            <div class="confirmar">                
             <input class="cc" type="submit" value="CONFIRMAR">
             </div>
         </div>
