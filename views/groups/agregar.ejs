@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <%- include("./partials/head") %>
+        <%- include("../partials/head") %>
         <link rel="stylesheet" href="css/agregarstyles.css">
         <title>AGREGAR</title>
     </head>
 <body>
     <header>   
-        <%- include("./partials/header") %>
+        <%- include("../partials/header") %>
     </header>
     <div class="titulo">
         <h2>AÑADIR VACUNO</h2>  
@@ -21,7 +21,7 @@
         <form class="agregar_vacas" action="/agregar" method="POST" enctype="multipart/form-data">        
             <div class="calsificacionv">
             <label for="categoria">CATEGORIA</label>
-            <select name="clasificacionVacuna" id="clasificacionvacuna">
+            <select name="categoria" id="clasificacionvacuna">
                 <option value="En Blanco"></option>
                 <option value="Ternera">Ternera</option>
                 <option value="Ternero">Ternero</option>
@@ -36,25 +36,25 @@
         
         <div class="nombre">
             <label for="nombre">NOMBRE</label>
-            <input class="nombreinput" type="text" name="nombreDelVacuno" placeholder="Nombre del Vacuno">
+            <input class="nombreinput" type="text" name="nombre" placeholder="Nombre del Vacuno">
             <span><p class="pformu">Debe tener más de 4 caracteres</p></span>
         </div>
 
         <div class="nacimiento">
             <label for="fechadenacimiento">FECHA DE NACIMIENTO<b class="b"></b></label>
-            <input class="nacimientoinput" type="date" name="fechaDeNacimiento" id="fechadenacimiento">
+            <input class="nacimientoinput" type="date" name="nacimiento" id="fechadenacimiento">
             <span><p class="pformu"></p></span>
         </div>
 
         <div class="dueño">
-            <label for="nombre">DUEÑO</label>
-            <input class="dueñoinput" type="text" name="dueño" placeholder="Dueño">
+            <label for="nombre">PROPIETARIO</label>
+            <input class="dueñoinput" type="text" name="propietario" placeholder="Propietario">
             <span><p class="pformu">Debe Ingresar un Dueño</p></span>
         </div>
 
         <div class="hijade">
-            <label for="nombre">HIJA DE</label>
-            <input class="hijadeinput" type="text" name="hijaDe" placeholder="Hija de">
+            <label for="nombre">DESCENDENCIA</label>
+            <input class="hijadeinput" type="text" name="descendencia" placeholder="Hija de">
             <span><p class="pformu">Debe Ingresar la línea de Sangre</p></span>
         </div>
             
@@ -66,7 +66,7 @@
         
         <div class="comentario">
             <label for="nombre">COMENTARIO</label>
-            <p><textarea name="comentarioInput" rows="5" cols="43" placeholder="Escribe aquí tu comentario:"></textarea></p>
+            <p><textarea name="comentario" rows="5" cols="43" placeholder="Escribe aquí tu comentario:"></textarea></p>
             <span><p class="pformu">Debe insertar las características del animal</p></span>
 
         </div>
@@ -78,7 +78,7 @@
     </div>
     </main>
     <footer>
-        <%- include("./partials/footer") %>
+        <%- include("../partials/footer") %>
     </footer>
 </body>
 </html>
