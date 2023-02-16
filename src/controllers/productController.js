@@ -1,39 +1,86 @@
 //Fuente de datos//
+const fs = require('fs');
+const path = require('path');
+const jsonTable = require('../database/jsonTable');
+
+const groupsModel = jsonTable('groups');
 
 //objeto literal con acciones para cada ruta//
 const producController = {
     home:(req,res) => {
-        res.render("home")
+        res.render('./groups/home');
+    },
+    informe:(req,res) => {
+
+        let groups = groupsModel.all()
+
+        res.render('./groups/informe',  { groups });
     },
 
-    agregar:(req,res) => {
-        res.render("agregar")
+    agregar: (req, res) => {
+        res.render('./groups/agregar');
     },
 
-    guardar:(req,res)=>{
-        let vacas = {
-            categoria: req.body.clasificacionVacuna,
-            nombre: req.body.nombreDelVacuno,
-            fechadenacimiento: req.body.fechaDeNacimiento,
-            dueño: req.body.dueño,
-            hijade: req.body.hijaDe,
-            imagen: req.body.userImage,
-            comentario: req.body.comentarioInput,
-        }
-        res.redirect('/informe');
-    },
+    guardar: (req, res) => {
+        if(req.file){ 
+        let group = req.body;
+        group.image = req.file.filename
 
+        groupId = groupsModel.agregar(group);
+
+        res.redirect('/groups/' + groupId);
+    } else {
+        res.render('./groups/agregar');
+    }
+    },
     
+    mostrar: (req, res) =>{
+        let group = groupsModel.find(req.params.id);
 
-    //modificar:(req,res)=>{
-    //let idVacas = req.params.idVacas;
-    //res.send(idVacas);
-    //},
+        res.render('./groups/informe', { group });
+    },
 
-    //actualizar:(req,res)=>{
-        //let id = req.params.id;
-        //res.send(id);
-    //},
+    modificar: (req, res) => {
+        let group = groupsModel.find(req.params.id)
+        let categories = categoriesModel.all();
+
+        res.render('./groups/edit', { group, categories });
+    },
+
+    actualziar: (req, res) => {
+        let group = req.body;
+
+        group.id = req.params.id;
+
+        groupId = groupsModel.actualizar(group);
+
+        res.redirect('./groups/' + groupId)
+    },
+
+    destroy: (req, res) => {
+
+        let group = groupsModel.find(req.params.id);
+        let imagePath = path.join(__dirname, '../public/images/groups/' + group.image);
+        
+        groupsModel.eliminar(req.params.id);
+
+        if (fs.existsSync(imagePath)) {
+            fs.unlinkSync(imagePath)
+        }
+
+        res.redirect('/groups')
+    },
+    search: (req, res) => {
+        
+        // Traigo todos los grupos
+
+        // Filtro los grupos
+
+        // Envío los grupos y lo que busco el usuario a la vista
+
+        res.render('groups/search', {});
+    },
+
 
 };
 

@@ -9,7 +9,7 @@ const productsController = require("../controllers/productController")
 //aca debemos colocar el multer para almacenar localmente los datos//
 const storage = multer.diskStorage({
     destination:(req,file,cb) => {
-        cb(null, path.join(__dirname, '../../public/images/products'));
+        cb(null, path.join(__dirname, '../../public/images/groups'));
     },
     filename:(req,file,cb) => {
         console.log(file)
@@ -22,6 +22,8 @@ const upload = multer({storage});
 //aca definimos las rutas//
 // Todos los grupos
 router.get("/", productsController.home);
+router.get("/informe", productsController.informe);
+
 
 // Formulario de creación
 router.get("/agregar", productsController.agregar);
@@ -30,6 +32,7 @@ router.get("/agregar", productsController.agregar);
 router.post("/agregar",upload.single('userImage'),productsController.guardar)
 
 // Detalle de un grupo
+router.get("/:id", productsController.mostrar);
 
 
 
