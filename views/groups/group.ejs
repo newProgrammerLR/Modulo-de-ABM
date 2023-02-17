@@ -1,3 +1,4 @@
+
 <article class="card">
     <div class="card-left">
         <figure><img src="/images/groups/<%= group.image ? group.image : 'default.png' %>" alt=""></figure>
@@ -5,9 +6,7 @@
     </div>
     <div class="card-content">
         <h3><%= group.nombre %></h3>
-        <% if (group.categoria) { %>
-            <p>Categoría: <%= group.categoria %></p>
-        <%} %>
+        <p>Categoría: <%= group.categoria %></p>
         <div>
             <a class="button" href="/groups/<%= group.id %>">Ver detalle</a>
         </div>
