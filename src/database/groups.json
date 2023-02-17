@@ -1,3 +1,32 @@
 [
-
+ {
+  "categoria": "Ternera",
+  "nombre": "El Chiquitin",
+  "nacimiento": "2023-02-07",
+  "propietario": "PABLO",
+  "descendencia": "Avioneta",
+  "comentario": "Pablo es el dueño",
+  "image": "Bovino1676659475716.jpg",
+  "id": 1
+ },
+ {
+  "categoria": "Ternero",
+  "nombre": "El Chiquitin",
+  "nacimiento": "2023-01-30",
+  "propietario": "Gabriel",
+  "descendencia": "Cotuda",
+  "comentario": "Vamos a ver si carga una vez mas",
+  "image": "Bovino1676661603584.jpg",
+  "id": 2
+ },
+ {
+  "categoria": "Ternera",
+  "nombre": "Vaquita",
+  "nacimiento": "2000-06-13",
+  "propietario": "Paola",
+  "descendencia": "Cotudita",
+  "comentario": "ESTA SERA MI TERNERITA",
+  "image": "Bovino1676665409376.jpg",
+  "id": 3
+ }
 ]

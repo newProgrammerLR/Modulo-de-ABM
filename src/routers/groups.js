@@ -24,7 +24,6 @@ const upload = multer({storage});
 router.get("/", productsController.home);
 router.get("/informe", productsController.informe);
 
-
 // Formulario de creación
 router.get("/agregar", productsController.agregar);
 
@@ -32,7 +31,8 @@ router.get("/agregar", productsController.agregar);
 router.post("/agregar",upload.single('userImage'),productsController.guardar)
 
 // Detalle de un grupo
-router.get("/:id", productsController.mostrar);
+router.get("/groups", productsController.mostrar);
+router.get("/groups/:id", productsController.mostrar);
 
 
 

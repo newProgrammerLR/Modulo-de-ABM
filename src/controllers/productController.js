@@ -10,6 +10,7 @@ const producController = {
     home:(req,res) => {
         res.render('./groups/home');
     },
+
     informe:(req,res) => {
 
         let groups = groupsModel.all()
@@ -28,7 +29,7 @@ const producController = {
 
         groupId = groupsModel.agregar(group);
 
-        res.redirect('/groups/' + groupId);
+        res.redirect('./groups/' + groupId);
     } else {
         res.render('./groups/agregar');
     }
@@ -37,7 +38,7 @@ const producController = {
     mostrar: (req, res) =>{
         let group = groupsModel.find(req.params.id);
 
-        res.render('./groups/informe', { group });
+        res.render('./groups/detail', { group });
     },
 
     modificar: (req, res) => {
@@ -47,7 +48,7 @@ const producController = {
         res.render('./groups/edit', { group, categories });
     },
 
-    actualziar: (req, res) => {
+    actualizar: (req, res) => {
         let group = req.body;
 
         group.id = req.params.id;
@@ -60,7 +61,7 @@ const producController = {
     destroy: (req, res) => {
 
         let group = groupsModel.find(req.params.id);
-        let imagePath = path.join(__dirname, '../public/images/groups/' + group.image);
+        let imagePath = path.join(__dirname, '../public/img/groups/' + group.img);
         
         groupsModel.eliminar(req.params.id);
 
