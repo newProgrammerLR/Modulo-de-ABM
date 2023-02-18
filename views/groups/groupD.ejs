@@ -3,21 +3,20 @@
     <head>
         <%- include("../partials/head") %>
         <link rel="stylesheet" href="../css/agregarstyles.css">
-        <link rel="stylesheet" href="../css/viejostyles.css">
-        <title>INFORME</title>
+        <link rel="stylesheet" href="../css/viejostyles2.css">
+        <title>Detalle</title>
     </head>
 <article class="card">
     <div class="card-left">
-        <figure><img src="/images/groups/<%= group.image ? group.image : 'default.png' %>" alt=""></figure>
-        <h3>#<%= group.id %></h3>
+        <figure><center><img src="/images/groups/<%= group.image ? group.image : 'default.png' %>" alt=""></center></figure>
     </div>
     <div class="card-content">
-        <p>Categoría: <%= group.categoria %></p>
-        <h3>Nombre: <%= group.nombre %></h3>
-        <p>Categoría: <%= group.categoria %></p>
-        <p>Nacimiento: <%= group.nacimiento %></p>
-        <p>Propietario: <%= group.propietario %></p>
-        <p>Descendencia: <%= group.descendencia %></p>
-        <p>Comentario: <%= group.comentario %></p>
+        <p>Categoría:</p> <p2><%= group.categoria %></p2>
+        <p>Nombre:</p> <p2><%= group.nombre %></p2>
+        <p>Categoría:</p> <p2><%= group.categoria %></p2>
+        <p>Nacimiento:</p> <p2><%= group.nacimiento %></p2>
+        <p>Propietario:</p> <p2><%= group.propietario %></p2>
+        <p>Descendencia:</p> <p2><%= group.descendencia %></p2>
+        <p>Comentario:</p> <p3><%= group.comentario %></p3>
     </div>   
 </article>

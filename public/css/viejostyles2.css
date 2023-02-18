@@ -1,7 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(../images/body3.png);
-    background-size: 315%;
+    background-image: url(../images/body.png);
+    background-size:cover;
 }
 
 div#fechad{
@@ -26,6 +26,10 @@ div#fecha{
 
 html {
     font-family: sans-serif;
+}
+
+body {
+    margin: 0;
 }
 
 a {
@@ -176,50 +180,63 @@ select { width: 100%; }
     margin-bottom: 30px;
     border-radius: var(--default-radius);
     box-shadow: 3px 3px 3px 0px rgb(0 0 0 / 15%);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
     .card-left {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-
-        width: 30%;
-        padding: 1rem;
-        
+        width: 90%;
+        padding: 2px;
         background-color: #75ff4b;
         color: white;
         text-align: center;
-        
-        border-radius: var(--default-radius) 0 0 var(--default-radius);
     }
 
-    .card-left figure {
-        height: 110px;
-        width: 110px;
-        margin: 0;
-        overflow: hidden;
-        border-radius: 50%;
-        background-color: white;
-    }
 
     .card-left figure img {
-        width: 130%;
+        width: 100%;
     }
 
     .card-content {
-        margin-left: 24px;
-        width: 62%;
-        padding: 0px;
-        background-color: #E6E6E6;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        width: 90%;
+    padding: 1px;
+    background-color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 10px;
     }
-h3{
-    font-size: 26px;
-    margin-top: 15px;
-}
+    p{
+        font-family: fantasy;
+        margin-left: 14px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        font-size: 22px;
+    }
+    p2{
+        margin-left: 26px;
+        margin-bottom: 9px;
+        font-size: 22px;
+    }
+    p3{
+        margin-left: 26px;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 26px;
+        margin-top: 15px;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+        background-image: url(../images/body.png);
+        background-size:cover;
+    }
 
 header nav a {
     display: inline-block;
@@ -233,5 +250,3 @@ header nav a {
 header nav a:hover {
     background-color: #BAF2E1;
 }
-
-
