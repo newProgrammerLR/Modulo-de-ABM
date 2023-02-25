@@ -4,15 +4,28 @@
         <%- include("../partials/head") %>
         <link rel="stylesheet" href="../css/agregarstyles.css">
         <link rel="stylesheet" href="../css/viejostyles.css">
+        <link rel="stylesheet" href="../css/buscador.css">
         <title>Informe</title>
     </head>
 <body>
     <header>   
         <%- include("../partials/header") %>
     </header>
+<div class="contenedorpadre1">
+    <div class="buscar">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" placeholder="Buscar" required />
+            <div class="btn">
+            <i class="fas fa-search icon"></i>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="contenedorpadre2">
     <div class="titulo">
         <a href="agregar"><h2>AÑADIR VACUNO</h2> </a> 
     </div>
+</div>
     <main>
         <div class="container">
             <% groups.forEach(group => { %>
