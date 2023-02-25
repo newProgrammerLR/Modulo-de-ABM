@@ -207,11 +207,7 @@ select { width: 100%; }
         font-size: 26px;
         margin-top: 15px;
     }
-    body{
-        font-family: 'Roboto', sans-serif;
-        background-image: url(../images/body.png);
-        background-size:cover;
-    }
+
 
 header nav a {
     display: inline-block;

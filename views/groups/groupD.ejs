@@ -3,10 +3,14 @@
     <head>
         <%- include("../partials/head") %>
         <link rel="stylesheet" href="../css/agregarstyles.css">
-        <link rel="stylesheet" href="../css/viejostyles2.css">
         <link rel="stylesheet" href="../css/esencialstyles.css">
         <title>Detalle</title>
     </head>
+    <div class="contenedorpadre2">
+        <div class="titulo">
+            <a href="/informe"><h2>VOLVER ATRAS</h2> </a> 
+        </div>
+    </div>
 <article class="card">
     <div class="card-left">
         <figure><center><img src="/images/groups/<%= group.image ? group.image : 'default.png' %>" alt=""></center></figure>
@@ -14,7 +18,6 @@
     <div class="card-content">
         <p>Categoría:</p> <p2><%= group.categoria %></p2>
         <p>Nombre:</p> <p2><%= group.nombre %></p2>
-        <p>Categoría:</p> <p2><%= group.categoria %></p2>
         <p>Nacimiento:</p> <p2><%= group.nacimiento %></p2>
         <p>Propietario:</p> <p2><%= group.propietario %></p2>
         <p>Descendencia:</p> <p2><%= group.descendencia %></p2>

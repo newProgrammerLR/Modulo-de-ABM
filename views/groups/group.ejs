@@ -1,7 +1,6 @@
 <head>
     <%- include("../partials/head") %>
     <link rel="stylesheet" href="../css/agregarstyles.css">
-    <link rel="stylesheet" href="../css/viejostyles2.css">
     <link rel="stylesheet" href="../css/esencialstyles.css">
     <title>Detalle</title>
 </head>
@@ -14,7 +13,7 @@
         <h3><%= group.nombre %></h3>
         <p>Categoría: <%= group.categoria %></p>
         <div>
-            <a class="button" href="/groups/<%= group.id %>">Ver detalle</a>
+            <a class="button" href="/informe/<%= group.id %>">Ver detalle</a>
         </div>
     </div>   
 </article>

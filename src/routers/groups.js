@@ -32,7 +32,7 @@ router.post("/agregar",upload.single('userImage'),productsController.guardar)
 
 // Detalle de un grupo
 router.get("/groups", productsController.mostrar);
-router.get("/groups/:id", productsController.mostrar);
+router.get("/informe/:id", productsController.mostrar);
 
 
 

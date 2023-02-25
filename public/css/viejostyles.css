@@ -13,10 +13,6 @@ a.button { color: #333; }
 
 .is-rounded { border-radius: 50%; }
 
-/* Contenedores */
-
-.container { padding: 0 20px; }
-
 /* Sistema de grillas */
 
 .columns {
@@ -145,11 +141,14 @@ select { width: 100%; }
 /* Cards */
 
 .card {
+    margin: 17px;
+    width: 90%;
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: var(--default-radius);
     box-shadow: 3px 3px 3px 0px rgb(0 0 0 / 15%);
+    flex-wrap: nowrap;
 }
     .card-left {
         display: flex;
@@ -177,12 +176,12 @@ select { width: 100%; }
     }
 
     .card-left figure img {
-        width: 130%;
+        width: 100%;
     }
 
     .card-content {
-        margin-left: 24px;
-        width: 62%;
+        margin-left: 13px;
+        width: 68%;
         padding: 0px;
         background-color: #E6E6E6;
         display: flex;
